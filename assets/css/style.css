@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../images/gaming-pattern.png') repeat;
+    /* insert pattern of your choosing and rename or change this name to match */
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+    color: #777777;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-weight: bold;
+}
+
+header {
+    background: white;
+    border-bottom: 3px solid #ccc;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    background: #4aaaa5;
+    color: white;
+    display: inline-block;
+    padding: 30px;
+    font-size: 30px;
+}
+
+nav {
+    width: 300px;
+    float: right;
+    margin-top: 35px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: #333;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-right: 1px solid #4aaaa5;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+nav a:hover {
+    background: #4aaaa5;
+    color: white;
+}
+
+nav ul li:last-child a {
+    border-right: none;
+    padding-right: none;
+}
+
+
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    display: block;
+    margin: 5px 0 20px 0;
+    border: 2px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 300px;
+}
+
+form button {
+    background: #4aaaa5;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: none;
+}
+
+footer {
+    background: #666;
+    border-top: 5px solid #4aaaa5;
+    color:#ccc;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.wrapper, .navwrapper {
+width: 960px;
+margin: 0 auto;
+}
+
+
+
+.inline-img {
+    float: left;
+    margin: 0 15px 15px 0;
+    border: 1px solid #777;
+}
+.portfolio-item {
+    position: relative;
+    background-color: rgba(0,0,0, .5);
+    margin-bottom:20px;
+    width: 45%;
+    float: left;
+    height: 250px;
+}
+
+.portfolio-item:nth-of-type(even) {
+float: right;
+}
+
+.portfolio-item h4 {
+    background: #4aaaa5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+}
+.portdiv {
+    width: 65%;
+
+}
+.clearfix {
+display: block;
+clear: both;
+margin-bottom:100px;
+}
+
+#content {
+background: white;
+padding: 25px;
+border: 2px solid #ccc;
+width: 960px;
+float: left;
+}
+
+#content h2 {
+    font-size: 24px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+
+#port1 {
+    background: url('../images/port1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#port2 {
+    background: url('../images/port2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#port3 {
+    background: url('../images/port3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#port4 {
+    background: url('../images/port4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#port5 {
+    background: url('../images/port5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 836px) {
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .navwrapper, .portdiv, #content {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    .inline-img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    
+    .portfolio-item:nth-of-type(even) {
+        float: left;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        
+    }    
+}
