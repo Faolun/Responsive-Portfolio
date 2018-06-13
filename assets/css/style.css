@@ -197,19 +197,24 @@ float: left;
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 836px) {
+@media screen and (max-width: 980px) {
     .wrapper {
         width: 100%;
         padding: 20px;
     }
-    
     .navwrapper, .portdiv, #content {
         width: 100%;
     }
     
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
+    
+    /* issues are covered by @media above, would remove but homework requires it. */
+
+}
+
+@media screen and (max-width: 640px) {
 
     h1 {
         width: 100%;
